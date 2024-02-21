@@ -29,30 +29,30 @@ export default function Testimony() {
 
   return (
     <>
-      <h1 className='text-3xl px-4 font-bold mt-8 mb-10'>Depoimentos ❇️</h1>
-      <div className='mx-auto sm:mx-20 mb-10'>
-        <ul className='m-2'>
+      <div className='flex flex-col items-center justify-center mt-8 mb-28'>
+        <h1 className='text-3xl text-left font-bold mb-8'>Depoimentos ❇️</h1>
+        <div className='grid grid-cols-2 gap-0'>
           {posts.map((post) => (
-            <li
+            <div
               key={post.id}
-              className='bg-emerald-500 rounded-lg shadow-lg p-2 m-3'
+              className='bg-emerald-500 rounded-lg shadow-lg p-2 m-3 flex-grow'
             >
               <div className='px-4 py-3'>
                 <Link
-                  className=' hover:text-emerald-700'
+                  className='hover:text-emerald-800'
                   href={{
                     pathname: `/testimony/${encodeURIComponent(post.id)}`,
                     query: { author: post.author, quote: post.quote },
                   }}
                 >
                   <h1 className='text-xl font-bold text-center'>
-                    {post.author} ➡️
+                    {post.author}
                   </h1>
                 </Link>
               </div>
-            </li>
+            </div>
           ))}
-        </ul>
+        </div>
       </div>
     </>
   );

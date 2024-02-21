@@ -1,3 +1,4 @@
+import Footer from '@/components/footer';
 import Navbar from '@/components/navbar';
 
 export default function DefaultLayout(page: any) {
@@ -5,6 +6,7 @@ export default function DefaultLayout(page: any) {
     <>
       <Navbar />
       {page}
+      <Footer />
     </>
   );
 }

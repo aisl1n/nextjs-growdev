@@ -3,7 +3,7 @@ import Head from 'next/head';
 
 export default function SobreMim() {
   return (
-    <div className='flex flex-col items-center justify-center min-h-screen'>
+    <div className='flex flex-col items-center justify-center mt-8 mb-28'>
       <div className='max-w-screen-md px-4 mx-auto'>
         <h1 className='text-3xl font-bold mb-4'>Sobre Mim ✍️</h1>
         <p className='mb-4'>

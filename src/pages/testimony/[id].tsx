@@ -17,7 +17,7 @@ export default function Testimony() {
         </div>
         <div className='bg-gray-100 px-4 rounded-lg py-2 flex justify-end'>
           <Link
-            className='text-emerald-800 hover:text-emerald-100'
+            className='text-emerald-800 hover:text-emerald-400'
             href='/testimony'
           >
             Voltar
