@@ -13,17 +13,17 @@ const Navbar = () => {
       <div className='container mx-auto flex justify-between items-center'>
         <div>
           <Link className='text-white text-2xl font-bold' href='/'>
-            PSI Alana ✨
+            PSI Fulana ✨
           </Link>
         </div>
         <div className='hidden md:block'>
-          <Link className='text-white mr-4 font-bold' href='/sobre-mim'>
+          <Link className='text-white mr-4 font-bold' href='/about'>
             Sobre mim
           </Link>
-          <Link className='text-white mr-4 font-bold' href='/depoimentos'>
+          <Link className='text-white mr-4 font-bold' href='/testimony'>
             Depoimentos
           </Link>
-          <Link className='text-white font-bold' href='/contato'>
+          <Link className='text-white font-bold' href='/contact'>
             Contato
           </Link>
         </div>
@@ -66,13 +66,13 @@ const Navbar = () => {
       </div>
       {isOpen && (
         <div className='md:hidden bg-emerald-500  text-2xl rounded-md m-2 p-2'>
-          <Link className='block text-white p-2 font-bold' href='/sobre-mim' onClick={() => handleToggle()}>
+          <Link className='block text-white p-2 font-bold' href='/about' onClick={() => handleToggle()}>
             Sobre mim
           </Link>
-          <Link className='block text-white p-2 font-bold' href='/depoimentos' onClick={() => handleToggle()}>
+          <Link className='block text-white p-2 font-bold' href='/testimony' onClick={() => handleToggle()}>
             Depoimentos
           </Link>
-          <Link className='block text-white p-2 font-bold' href='/contato' onClick={() => handleToggle()}>
+          <Link className='block text-white p-2 font-bold' href='/contact' onClick={() => handleToggle()}>
             Contato
           </Link>
         </div>
